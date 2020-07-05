@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <title>ChocoCat</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Let's challenge PWA</title>
-  <meta name="description" content="PWAのサンプル">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="PWA">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  
+  
   <link rel="shortcut icon" href="images/favicon.ico">
 
   <!-- Chrome on Android -->
@@ -18,12 +22,142 @@
   <link rel="apple-touch-icon" href="images/icon-152x152.png">
 
 </head>
-<body>
+<body class="is-preload">
 
+  <!-- Header -->
+    <header id="header">
+      <h1>ChocoCat</h1>
+      <nav>
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#one">What I Do</a></li>
+          <li><a href="#two">Who I Am</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Intro -->
+    <section id="intro" class="main style1 dark fullscreen">
+      <div class="content">
+        <header>
+          <h2>ChocoCat</h2>
+        </header>
+        <p>猫のチョコちゃん<br>４歳になるチョコちゃんは日々進化を遂げている</p>
+        <footer>
+          <a href="#one" class="button style2 down">More</a>
+        </footer>
+      </div>
+    </section>
+
+  <!-- One -->
+    <section id="one" class="main style2 right dark fullscreen">
+      <div class="content box style2">
+        <header>
+          <h2>What I Do</h2>
+        </header>
+        <p>歳をとるごとにだんだん太ってきたチョコちゃん。昔は俊敏に動いていたチョコちゃんだが今や体が重くて動くことを怠けている。</p>
+      </div>
+      <a href="#two" class="button style2 down anchored">Next</a>
+    </section>
+
+  <!-- Two -->
+    <section id="two" class="main style2 left dark fullscreen">
+      <div class="content box style2">
+        <header>
+          <h2>Who I Am</h2>
+        </header>
+        <p>シャム猫と言われるけど本当はタイ猫。触られるのが嫌いで唯一耳だけは触らせてくる。</p>
+      </div>
+      <a href="#work" class="button style2 down anchored">Next</a>
+    </section>
+
+  <!-- Work -->
+    <section id="work" class="main style3 primary">
+      <div class="content">
+        <header>
+          <h2>My Work</h2>
+          <p>食っちゃ寝がチョコちゃんの仕事。<br>たまに外へ散歩に出るけど体が重いのですぐに家に帰って睡眠。まだまだ成長途中。</p>
+        </header>
+
+        <!-- Gallery  -->
+          <div class="gallery">
+            <article class="from-left">
+              <a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="夏は模様が薄くなる" alt="" /></a>
+            </article>
+            <article class="from-right">
+              <a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="獲物を狙う顔がまじブサイク" alt="" /></a>
+            </article>
+            <article class="from-left">
+              <a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="本当抱っこが嫌い" alt="" /></a>
+            </article>
+            <article class="from-right">
+              <a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="時々猫じゃないのでは？と思う" alt="" /></a>
+            </article>
+            <article class="from-left">
+              <a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="昔はスリムだった1" alt="" /></a>
+            </article>
+            <article class="from-right">
+              <a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="昔はスリムだった２" alt="" /></a>
+            </article>
+          </div>
+
+      </div>
+    </section>
+
+  <!-- Contact -->
+    <section id="contact" class="main style3 secondary">
+      <div class="content">
+        <header>
+          <h2>Say Hello.</h2>
+          <p>チョコちゃんに熱いメッセージを</p>
+        </header>
+        <div class="box">
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field half"><input type="text" name="name" placeholder="Name" /></div>
+              <div class="field half"><input type="email" name="email" placeholder="Email" /></div>
+              <div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+            </div>
+            <ul class="actions special">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+    <footer id="footer">
+
+      <!-- Icons -->
+        <ul class="icons">
+          <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+          <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+          <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+        </ul>
+
+      <!-- Menu -->
+        <ul class="menu">
+          <li>&copy; </li><li>chococat</a></li>
+        </ul>
+
+    </footer>
+
+  <!-- Scripts -->
+  　<script src="script.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
     
-    <h1>PWA Sample</h1>
-    <p>PWAに挑戦しましょう！</p>
-
-    <script src="script.js"></script>
 </body>
 </html>
